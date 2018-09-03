@@ -1,14 +1,48 @@
+
 html {
-	background-color: lightblue;
+	background-color: #CCD1D1;
 	font-family: verdana;
+}
+
+body {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .NavBar {
 	position: fixed;
+	right: 90px;
 	color: white;
-	background-color: orange;
+	background-color: #CCD1D1;
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
-	padding: 14px;
+	padding: 10px;
+	border-radius: 5px;
+	font-weight: bold;
+}
+
+.Part {
+	color: #CCD1D1;
+	background-color: #F2F4F4;
+	padding: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 25px;
+}
+
+.center {
+    margin: 10px;
+    border: 3px solid #CCD1D1;
+    padding: 3px;
+    float: right;
+}
+
+#pretty {
+	font-weight: bold;
+}
+
+.heads {
+	color: #99A3A4;
 }
