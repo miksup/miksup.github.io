@@ -1,6 +1,7 @@
 
 html {
 	background-color: #CCD1D1;
+	background-image: url("http://static.tumblr.com/0dbc04d90b64a8b821f6c4a4602b5b4d/6xfo3t2/XMRnb4iu8/tumblr_static_yjl47du30pwwgc0ow0cgk8gc.jpg");
 	font-family: verdana;
 }
 
@@ -12,9 +13,10 @@ body {
 
 .NavBar {
 	position: fixed;
-	right: 90px;
+	top: 5%;
+	left: 50%;
 	color: white;
-	background-color: #CCD1D1;
+	background-color: rgba(0,0,0,.9);
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
@@ -25,11 +27,12 @@ body {
 
 .Part {
 	color: #CCD1D1;
-	background-color: #F2F4F4;
 	padding: 40px;
 	margin-left: auto;
 	margin-right: auto;
 	border-radius: 25px;
+
+	background: rgba(0,0,0,.8);
 }
 
 .center {
@@ -39,8 +42,8 @@ body {
     float: right;
 }
 
-#pretty {
-	font-weight: bold;
+.p{
+	font-style: italic;
 }
 
 .heads {
