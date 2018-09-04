@@ -8,7 +8,7 @@
 	</head>
 
 	<body>
-	
+	<button class="collapsible"> MENU </button>
 	<nav class="NavBar">
 		<a href="About.html"> ABOUT </a>
 		<a href="Projects.html"> PROJECTS </a>
@@ -17,9 +17,31 @@
 	</nav>
 	
 	<script>
-	var x = "Welcome!";
-	alert(x);
+	var x = {
+	greeting: "Welcome!",
+	warning: "Are you sure you want to leave?"
+	};
+	window.alert(x.greeting);
+	console.log(x.warning);
 	</script>
+
+		<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    
+    this.classList.toggle("active");
+    var NavBar = this.nextElementSibling;
+    if (NavBar.style.display === "block") {
+      NavBar.style.display = "none";
+    } else {
+      NavBar.style.display = "block";
+    }
+  });
+}
+		</script>
 	
 	</body>
 </html>

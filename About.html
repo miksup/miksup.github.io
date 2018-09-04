@@ -7,6 +7,8 @@
 	</head>
 	<body>
 	
+	<button class="collapsible"> MENU </button>
+
 	<div class="NavBar">
 		<a href="About.html"> ABOUT </a>
 		<a href="Projects.html"> PROJECTS </a>
@@ -16,8 +18,12 @@
 
 	<div class="Part">
 		<h1> ABOUT </h1>		
-		<img src="me.jpg" alt="me" width="180" height="180" class="center" >
 		
+		<div id="cf">
+		<img class="bottom" src="kinotes.jpg" alt="kinote" width="180" height="180">
+		<img class="top" src="me.jpg" alt="me" width="180" height="180">		
+		</div>
+
 		<h4 class="heads"> Who Am I? </h4>
 		<p>
 		A hard working graduate with an endearing personality and the ability to communicate with people on all levels. Miki is a results-driven and highly motivated worker who copes well in high-pressure situations. Enjoys working in a team, as well as individually and relishes new challenges – as it allows me to exercise my creativity. Organised and focused, to ensure that work can be completed as effectively as possible.	
@@ -75,6 +81,27 @@
 		<p>
 		Stuff and things.	
 		</p>
-	</div>
+
+		</div>
+
+		<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    
+    this.classList.toggle("active");
+    var NavBar = this.nextElementSibling;
+    if (NavBar.style.display === "block") {
+      NavBar.style.display = "none";
+    } else {
+      NavBar.style.display = "block";
+    }
+  });
+}
+		</script>
+
+
 	</body>
 </html>

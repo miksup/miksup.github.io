@@ -7,7 +7,7 @@
 	</head>
 
 	<body>
-	
+	<button class="collapsible"> MENU </button>
 	<div class="NavBar">
 		<a href="About.html"> ABOUT </a>
 		<a href="Projects.html"> PROJECTS </a>
@@ -66,5 +66,23 @@
 		</table>
 		
 	</div>
+
+		<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    
+    this.classList.toggle("active");
+    var NavBar = this.nextElementSibling;
+    if (NavBar.style.display === "block") {
+      NavBar.style.display = "none";
+    } else {
+      NavBar.style.display = "block";
+    }
+  });
+}
+		</script>
 	</body>
 </html>

@@ -12,22 +12,45 @@ body {
 }
 
 .NavBar {
-	position: fixed;
-	top: 5%;
-	left: 50%;
+	z-index: 1;
+	position:fixed;
+	top: 4.7%;
+	left: 40%;
 	color: white;
 	background-color: rgba(0,0,0,.9);
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
 	padding: 10px;
+	border: 1px solid white;
+	border-radius: 5px;
+	font-weight: bold;
+	display: none;
+	overflow: hidden;
+        transition: max-height 0.2s ease-out;
+}
+
+.collapsible {
+	z-index: 1;
+	position:fixed;
+	top: 5%;
+	left: 80%;
+	background-color: rgba(0,0,0,.7);
+	color: white;
+	cursor: pointer;
+	padding: 10px;
 	border-radius: 5px;
 	font-weight: bold;
 }
 
+.active, .collapsible:hover {
+	background-color: rgba(0,0,0,.9);
+	color: purple;
+}
+
 .Part {
 	color: #CCD1D1;
-	padding: 40px;
+	padding: 30px;
 	margin-left: auto;
 	margin-right: auto;
 	border-radius: 25px;
@@ -35,7 +58,14 @@ body {
 	background: rgba(0,0,0,.8);
 }
 
-.center {
+.top {
+    margin: 10px;
+    border: 3px solid #CCD1D1;
+    padding: 3px;
+    float: right;
+}
+
+.bottom {
     margin: 10px;
     border: 3px solid #CCD1D1;
     padding: 3px;
@@ -48,4 +78,26 @@ body {
 
 .heads {
 	color: #99A3A4;
+}
+
+#cf {
+  position:relative;
+  float: right;
+  height:200px;
+  width:200px;
+  margin:0 auto;
+}
+
+#cf img {
+  position:absolute;
+  
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+#cf img.top:hover {
+  opacity:0;
 }
