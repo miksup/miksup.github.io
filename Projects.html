@@ -4,6 +4,7 @@
 		<title>PROJECTS</title>
 
 		<link rel="stylesheet" href="style/main.css">
+
 	</head>
 
 	<body>
@@ -39,25 +40,29 @@
 
 		<h5 class="heads"> PODCAST </h5>		
 		<p></p>
-		<a href="https://www.soundcloud.com/outliersx"> OutliersX </a>
+		<a href="https://www.soundcloud.com/outliersx"><img id="icon" src="outliersX.jpg" width="200" height="200" border-radius="25px"></a>
 		
 	</div>
-		<script>
-var coll = document.getElementsByClassName("collapsible");
-var i;
 
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
+
+	<script>
+		var coll = document.getElementsByClassName("collapsible");
+		var i;
+
+		for (i = 0; i < coll.length; i++) {
+  			coll[i].addEventListener("click", function() {
     
-    this.classList.toggle("active");
-    var NavBar = this.nextElementSibling;
-    if (NavBar.style.display === "block") {
-      NavBar.style.display = "none";
-    } else {
-      NavBar.style.display = "block";
-    }
-  });
-}
-		</script>
+   				this.classList.toggle("active");
+    				var NavBar = this.nextElementSibling;
+    				if (NavBar.style.display === "block") {
+     					NavBar.style.display = "none";
+    					} else {
+	      				NavBar.style.display = "block";
+    				}
+			});
+		}
+	</script>
+
+		
 	</body>
 </html>
